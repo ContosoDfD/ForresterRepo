@@ -1,0 +1,11 @@
+# This file defines attributes for files in the repository, such as text encoding.
+
+* text=auto
+*.c text
+*.h text
+*.sh text
+*.md text
+*.config text
+*.CMakeLists.txt text
+*.LICENSE text
+*.README.md text

@@ -1,0 +1,14 @@
+# ssh_config
+
+Host *
+    ForwardAgent no
+    ForwardX11 no
+    RhostsRSAAuthentication no
+    RSAAuthentication yes
+    PasswordAuthentication yes
+    ChallengeResponseAuthentication no
+    GSSAPIAuthentication no
+    GSSAPIDelegateCredentials no
+    UsePAM yes
+
+# Add additional host configurations below as needed.

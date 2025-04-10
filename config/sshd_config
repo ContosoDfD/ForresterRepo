@@ -1,0 +1,61 @@
+# OpenSSH SSHD Configuration File
+
+# Port to listen on
+Port 22
+
+# Listen on all interfaces
+ListenAddress 0.0.0.0
+
+# Protocol version
+Protocol 2
+
+# Permit root login
+PermitRootLogin no
+
+# Password authentication
+PasswordAuthentication yes
+
+# Use public key authentication
+PubkeyAuthentication yes
+
+# Allow users
+AllowUsers your_username
+
+# Max authentication attempts
+MaxAuthTries 3
+
+# Log level
+LogLevel INFO
+
+# Enable X11 forwarding
+X11Forwarding yes
+
+# Use privilege separation
+UsePrivilegeSeparation sandbox
+
+# Subsystem for SFTP
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+# Banner file
+Banner /etc/issue.net
+
+# TCP keep alive
+TCPKeepAlive yes
+
+# Client alive interval
+ClientAliveInterval 300
+
+# Client alive count max
+ClientAliveCountMax 2
+
+# Permit empty passwords
+PermitEmptyPasswords no
+
+# Allow TCP forwarding
+AllowTcpForwarding yes
+
+# Allow agent forwarding
+AllowAgentForwarding yes
+
+# Use PAM
+UsePAM yes
